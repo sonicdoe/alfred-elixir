@@ -12,16 +12,19 @@
   "repository": "sonicdoe/alfred-elixir",
   "author": "Jakob Krigovsky <jakob@krigovsky.com>",
   "files": [
-    "info.plist"
+    "info.plist",
+    "search-index.json"
   ],
   "scripts": {
     "postinstall": "alfy-init",
+    "prepare": "node build-search-index.js",
     "preuninstall": "alfy-cleanup",
     "test": "standard && ava"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
     "ava": "^0.21.0",
+    "got": "^7.1.0",
     "standard": "^10.0.2"
   },
   "engines": {
