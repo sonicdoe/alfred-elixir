@@ -11,7 +11,9 @@
   "license": "ISC",
   "repository": "sonicdoe/alfred-elixir",
   "author": "Jakob Krigovsky <jakob@krigovsky.com>",
-  "files": [],
+  "files": [
+    "info.plist"
+  ],
   "scripts": {
     "test": "standard && ava"
   },
