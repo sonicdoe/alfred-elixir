@@ -1,0 +1,25 @@
+{
+  "name": "alfred-elixir",
+  "version": "0.0.0",
+  "description": "Search the Elixir documentation right from Alfred",
+  "keywords": [
+    "elixir",
+    "alfred",
+    "workflow",
+    "alfred-workflow"
+  ],
+  "license": "ISC",
+  "repository": "sonicdoe/alfred-elixir",
+  "author": "Jakob Krigovsky <jakob@krigovsky.com>",
+  "files": [],
+  "scripts": {
+    "test": "standard && ava"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "standard": "^10.0.2"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}
