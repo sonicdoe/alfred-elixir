@@ -20,6 +20,7 @@
     "test": "standard && ava"
   },
   "devDependencies": {
+    "alfy-test": "^0.3.0",
     "ava": "^0.21.0",
     "standard": "^10.0.2"
   },
