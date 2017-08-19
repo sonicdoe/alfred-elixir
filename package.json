@@ -12,6 +12,7 @@
   "repository": "sonicdoe/alfred-elixir",
   "author": "Jakob Krigovsky <jakob@krigovsky.com>",
   "files": [
+    "index.js",
     "info.plist",
     "search-index.json"
   ],
