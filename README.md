@@ -2,6 +2,8 @@
 
 > Search the [Elixir documentation](https://hexdocs.pm/elixir/) right from [Alfred](https://www.alfredapp.com)
 
+<img src="screenshot.png" alt="Screenshot" width="593">
+
 ## Installation
 
 ```
