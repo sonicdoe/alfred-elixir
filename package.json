@@ -17,8 +17,8 @@
     "search-index.json"
   ],
   "scripts": {
+    "build:index": "node build-search-index.js",
     "postinstall": "alfy-init",
-    "prepare": "node build-search-index.js",
     "preuninstall": "alfy-cleanup",
     "test": "standard && ava"
   },
