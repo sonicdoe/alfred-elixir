@@ -25,7 +25,7 @@ got(`${BASE_URL}/Kernel.html`).then(response => {
       descriptor: module.id
     }).concat([
       ...(module.functions || []),
-      ...(module.macros || []),
+      ...(module.guards || []),
       ...(module.callbacks || []),
       ...(module.types || [])
     ].reduce((accumulator, element) => {
