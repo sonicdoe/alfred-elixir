@@ -18,7 +18,6 @@ got(`${BASE_URL}/Kernel.html`).then(response => {
   return [
     ...nodes.modules,
     ...nodes.exceptions,
-    ...nodes.protocols,
     ...nodes.tasks
   ].reduce((accumulator, module) => {
     return accumulator.concat({
