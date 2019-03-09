@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
-    "ava": "^0.21.0",
+    "ava": "^1.3.1",
     "got": "^7.1.0",
     "standard": "^11.0.1"
   },
