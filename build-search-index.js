@@ -20,14 +20,18 @@ got(`${BASE_URL}/Kernel.html`).then(response => {
     ...nodes.exceptions,
     ...nodes.tasks
   ].reduce((accumulator, module) => {
+    if (!module.nodeGroups) {
+      return accumulator
+    }
+
     return accumulator.concat({
       module: module.id,
       descriptor: module.id
     }).concat([
-      ...(module.functions || []),
-      ...(module.guards || []),
-      ...(module.callbacks || []),
-      ...(module.types || [])
+      ...(module.nodeGroups.find(group => group.key === 'functions') || { nodes: [] }).nodes,
+      ...(module.nodeGroups.find(group => group.key === 'guards') || { nodes: [] }).nodes,
+      ...(module.nodeGroups.find(group => group.key === 'callbacks') || { nodes: [] }).nodes,
+      ...(module.nodeGroups.find(group => group.key === 'types') || { nodes: [] }).nodes
     ].reduce((accumulator, element) => {
       return accumulator.concat({
         module: module.title,
